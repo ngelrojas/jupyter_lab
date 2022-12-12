@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  jupyter_lab:
+      image: jupyter/datascience-notebook
+      volumes:
+        - ./app/:/usr/src/app/
+      ports:
+        - 8888:8888
+      container_name: 'jupyter-lab' 
